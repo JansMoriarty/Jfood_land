@@ -1,0 +1,812 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(assets/bg\ pixel.gif);
+  /* background-position: center; */
+  /* background-repeat: no-repeat;
+  background-size: contain; */
+  /* width: 100%; */
+}
+
+/* ---------------- NAVBAR ------------------ */
+
+header {
+  /* background-color: rgb(156, 7, 7); */
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  color: white;
+  font-family: poppins;
+}
+
+.text-nav {
+  margin-left: 70px;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin-right: 20px;
+}
+
+li {
+  margin: 20px;
+}
+
+.btn-nav1 {
+  background-color: rgb(136, 4, 4);
+  border: none;
+  margin-right: 20px;
+  height: 35px;
+  width: 80px;
+  border-radius: 20px;
+  color: white;
+  font-family: poppins;
+}
+
+.content-nav {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+
+  li,
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+/* -------- CONTENT HOME --------- */
+
+#content-home {
+  align-items: center;
+  margin-top: 160px;
+  margin-left: 50px;
+  color: white;
+  font-family: poppins;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.btn-home {
+  margin-top: 30px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.btn-home:hover {
+  background-color: rgb(136, 4, 4);
+  color: white;
+}
+
+.content-rotate {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: -70px;
+  position: relative;
+}
+
+#rotate {
+  width: 350px;
+  height: 350px;
+  /* top: -50px; */
+  position: relative;
+  animation: rotation 20s infinite linear;
+  align-items: center;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.back-to-top {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  transition: 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: rgb(230, 177, 30);
+  color: white;
+}
+
+/* ------------ CONTENT FOOD ----------------- */
+
+#main-food {
+  /* background-color: #9b0808; */
+  background-image: url(assets/bg2.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.content-food {
+  display: grid;
+  margin-top: 20px;
+  font-family: poppins;
+  grid-template-columns: repeat(4, 15.5em);
+  justify-content: center;
+}
+
+.text-food {
+  text-align: center;
+  margin-top: 200px;
+  font-family: poppins;
+  color: white;
+  margin-top: 160px;
+  padding-top: 28px;
+}
+
+.food {
+  background-color: white;
+  width: 220px;
+  height: 430px;
+  /* align-items: center; */
+  text-align: center;
+  justify-content: center;
+  /* margin-left: 150px; */
+  /* margin-top: 0px; */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 3px 10px 20px rgba(0, 0, 0, 1);
+  margin-bottom: 40px;
+}
+
+.food:hover {
+  background-color: rgb(232, 230, 230);
+  box-shadow: none;
+}
+
+.img-food {
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  border: 8px solid rgb(136, 4, 4);
+  cursor: pointer;
+}
+
+.title-food {
+  font-size: 23px;
+  margin-top: 10px;
+  font-family: poppins;
+}
+
+.desc-food {
+  text-align: center;
+  font-size: 15px;
+  padding: 5px 18px;
+  width: 185px;
+  margin-bottom: 50px;
+}
+
+.btn-food {
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+}
+
+.price {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 20px;
+  color: rgb(136, 4, 4);
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.btn-buy {
+  padding: 5px 20px;
+  background-color: white;
+  color: rgb(136, 4, 4);
+  border-radius: 20px;
+  border: none;
+  transition: 0.5s;
+  font-weight: bolder;
+  border: 2px solid rgb(136, 4, 4);
+}
+
+.btn-buy:hover {
+  background-color: rgb(136, 4, 4);
+  color: white;
+}
+
+.btn-buy:active {
+  background-color: rgb(155, 154, 154);
+  opacity: 50%;
+  color: rgb(136, 4, 4);
+  border: 2px solid rgb(136, 4, 4);
+}
+
+.makanan {
+  /* font-weight: bold; */
+  text-align: right;
+  color: white;
+  font-size: 50px;
+  margin-right: 150px;
+  font-family: poppins;
+}
+
+/* ----------BEST SELLER--------------- */
+
+.container {
+  background-color: aqua;
+  width: 500px;
+  height: 200px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.today-menu {
+  background-image: url(assets/bg-todaymenu.svg);
+  background-color: rgb(136, 4, 4);
+  background-size: 100%;
+  height: 1400px;
+  /* height: 1000px; */
+}
+
+.text-today {
+  font-family: poppins;
+  color: white;
+  text-align: center;
+  padding: 30px 0 0 10px;
+}
+
+.container-menu {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.best-menu1 {
+  background-color: rgb(136, 4, 4);
+  width: 400px;
+  height: 150px;
+  margin-top: 70px;
+  background-image: url(assets/todaysoffer1.png);
+  background-size: 100%;
+  text-align: left;
+  align-items: center;
+  margin-top: 50px;
+  box-shadow: 1px 10px 20px black;
+  transition: 0.2s;
+  display: flex;
+
+  p {
+    color: white;
+    font-weight: bold;
+    font-family: poppins;
+    font-size: 20px;
+    width: 180px;
+    padding: 30px 0px 0px 20px;
+  }
+
+  .btn-today {
+    padding: 7px 17px;
+    background-color: white;
+    color: rgb(136, 4, 4);
+    border-radius: 20px;
+    border: none;
+    transition: 0.5s;
+    font-weight: bolder;
+    border: 2px solid rgb(136, 4, 4);
+    margin: 7px 0px 0px 10px;
+  }
+
+  .btn-today:hover {
+    background-color: rgb(136, 4, 4);
+    color: white;
+  }
+
+  .btn-today:active {
+    background-color: rgb(155, 154, 154);
+    opacity: 50%;
+    color: rgb(136, 4, 4);
+    border: 2px solid rgb(136, 4, 4);
+  }
+}
+
+.poto {
+  transition: 0.3s;
+}
+
+.best-menu1:hover {
+  transform: scale(1.03);
+
+  .poto {
+    transform: translateY(-20px);
+  }
+}
+
+.best-menu2 {
+  background-color: rgb(136, 4, 4);
+  width: 400px;
+  height: 150px;
+  margin-top: 70px;
+  background-image: url(assets/todaysoffer2.png);
+  background-size: 100%;
+  text-align: left;
+  align-items: center;
+  margin-top: 50px;
+  box-shadow: 1px 10px 20px black;
+  transition: 0.2s;
+  display: flex;
+
+  p {
+    color: white;
+    font-weight: bold;
+    font-family: poppins;
+    font-size: 20px;
+    width: 180px;
+    padding: 30px 0px 0px 20px;
+  }
+
+  .btn-today {
+    padding: 7px 17px;
+    background-color: white;
+    color: rgb(136, 4, 4);
+    border-radius: 20px;
+    border: none;
+    transition: 0.5s;
+    font-weight: bolder;
+    border: 2px solid rgb(136, 4, 4);
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+
+  .btn-today:hover {
+    background-color: rgb(136, 4, 4);
+    color: white;
+  }
+
+  .btn-today:active {
+    background-color: rgb(155, 154, 154);
+    opacity: 50%;
+    color: rgb(136, 4, 4);
+    border: 2px solid rgb(136, 4, 4);
+  }
+}
+
+.best-menu2:hover {
+  transform: scale(1.03);
+  /* box-shadow: none; */
+
+  .poto {
+    transform: translateY(-20px);
+  }
+}
+
+/* ---------  WHY CHOOSE US -------- */
+.choose-container {
+  text-align: center;
+  align-items: center;
+  margin-top: 150px;
+  font-family: poppins;
+  color: white;
+}
+
+.content-choose {
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.15);
+  width: 280px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px;
+  color: white;
+  font-family: montserrat;
+
+  h3 {
+    margin-top: 8px;
+  }
+
+  p {
+    margin-top: 5px;
+  }
+}
+
+.hero-icon {
+  font-size: 50px;
+}
+
+.bungkus-choose {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* ------------ ABOUT CONTACT --------------- */
+
+#contact {
+  display: flex;
+  /* text-align: center; */
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  font-family: poppins;
+  color: white;
+}
+
+.contact-me {
+  background-color: rgb(136, 4, 4);
+  height: 300px;
+  width: 400px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+
+  .username {
+    border: none;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .text {
+    margin: 10px 0px 20px 0px;
+    border: none;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    height: 100px;
+  }
+
+  .btn-submit {
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+  }
+
+  h2 {
+    margin-top: 10px;
+  }
+}
+
+.about-contact {
+  padding: 40px;
+  padding-right: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 12em);
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-right: 50px;
+
+  .email {
+    margin-top: 40px;
+  }
+}
+
+#contact-title {
+  font-family: poppins;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* --------- FOOTER ----------- */
+
+footer {
+  background-color: rgb(136, 4, 4);
+}
+
+.footerContainer {
+  width: 100%;
+  padding: 30px 0px;
+}
+
+.socialIcon {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcon a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialIcon a i {
+  color: rgb(136, 4, 4);
+  font-size: 2em;
+  opacity: 0.9;
+}
+
+.socialIcon a:hover {
+  background-color: rgb(136, 4, 4);
+  transition: 0.5s;
+}
+
+.socialIcon a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+.footerNav {
+  margin: 30px 0;
+}
+
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.footerNav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.2em;
+  opacity: 0.7;
+  transition: 0.5s;
+  font-family: arial;
+}
+
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+
+.footerBot {
+  background-color: rgb(119, 4, 4);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-family: arial;
+}
+
+/* ---------------- ARGGGHHH RESPONSIVEEEEE -------------------- */
+
+@media screen and (max-width: 476px) {
+  /* ---------- NAVBAR ------------------------------- */
+
+  header {
+    font-size: 8px;
+    position: relative;
+    right: 50px;
+
+    p,
+    span {
+      font-size: 8px;
+    }
+  }
+  /* ----------------- MAIN CONTENT ---------------------- */
+  body {
+    background-color: rgb(136, 4, 4);
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+  #rotate {
+    /* margin-left: 3px; */
+    width: 55%;
+    height: 55%;
+  }
+
+  #content-home {
+    h1 {
+      font-size: 38px;
+      line-height: 45px;
+    }
+
+    p {
+      width: 150px;
+      font-size: 12px;
+      margin-top: 12px;
+    }
+  }
+
+  /* ------------------ CONTENT FOOD-------------------------- */
+  #main-food {
+    background-image: url(assets/bg2.svg);
+    background-size: cover; /* Perbaikan disini */
+    background-position: center;
+    background-repeat: no-repeat; /* Menambahkan properti ini */
+    flex-wrap: wrap;
+
+    h1 {
+      font-size: 25px;
+      /* color: aqua; */
+    }
+
+    h2 {
+      font-size: 26px;
+      /* margin-left: 300px; */
+      position: relative;
+      left: 120px;
+    }
+  }
+
+  .content-food {
+    grid-template-columns: repeat(2, 10em);
+    gap: 30px;
+    display: grid;
+    /* background-color: aqua; */
+  }
+
+  .food {
+    height: 320px;
+    width: 170px;
+    align-items: center;
+  }
+
+  .img-food {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 3px solid rgb(136, 4, 4);
+    cursor: pointer;
+  }
+
+  .title-food {
+    font-size: 14px;
+    margin-top: 10px;
+    font-family: poppins;
+  }
+
+  .desc-food {
+    text-align: center;
+    font-size: 11px;
+    padding: 5px 18px;
+    width: 140px;
+    margin-bottom: 50px;
+  }
+
+  .btn-food {
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+  }
+
+  .price {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 4px 18px;
+    color: rgb(136, 4, 4);
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 12px;
+    margin-left: 4px;
+  }
+
+  .btn-buy {
+    padding: 4px 8px;
+    background-color: white;
+    color: rgb(136, 4, 4);
+    border-radius: 20px;
+    border: none;
+    transition: 0.5s;
+    font-weight: bolder;
+    border: 1.5px solid rgb(136, 4, 4);
+    font-size: 10px;
+    margin-right: 4px;
+  }
+
+  /* ------------- TODAY OFFER --------------- */
+
+  .text-today {
+    font-size: 36px;
+  }
+
+  .container-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .best-menu2 {
+    margin-top: 70px;
+  }
+
+  .today-menu {
+    height: 2400px;
+  }
+
+  /* ---------  WHY CHOOSE US -------------- */
+
+  .choose-container {
+    margin-top: 80px;
+
+    h1 {
+      font-size: 36px;
+    }
+  }
+
+  .bungkus-choose {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* ---------- ABOUT CONTACT ---------- */
+
+  #contact-title {
+    margin-top: 20px;
+    font-size: 34px;
+  }
+
+  #contact {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .about-contact {
+    height: 300px;
+    width: 270px;
+    grid-template-columns: repeat(2, 9em);
+  }
+
+  .contact-me {
+    height: 350px;
+    width: 250px;
+  }
+
+  .address {
+    h3 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .whatsapp {
+    h3 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .email {
+    h3 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+
+  /* ------------ FOOTER ------------ */
+
+  .footerNav ul li a {
+    font-size: 12px;
+  }
+}
